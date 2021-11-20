@@ -76,7 +76,6 @@ public Action CS_OnBuyCommand(int client, const char[] weapon)
             {
                if (Oyuncular <= 2)
                {
-                  ClientCommand(iClient, "play player/suit_denydevice.wav");
                   CPrintToChat(client, "{darkred}[VOLITANGAMING]{green} 1{default}v{purple}1{default}'de {green}%s{default} alınmasına izin verilmez.", Silahlist[i]);
                   ClientCommand(client, "play player/suit_denydevice.wav");
                   return Plugin_Handled;
