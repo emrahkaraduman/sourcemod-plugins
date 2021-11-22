@@ -65,7 +65,7 @@ public void OnClientDisconnect(int client)
 public void Event_PlayerDeath(Event event, const char[] name, bool dontBroadcast)
 {
    int attacker = GetClientOfUserId(event.GetInt("attacker"));
-   int client_died = GetClientOfUserId(GetEventInt(event, "userid"));
+   int client_died = GetClientOfUserId(event.GetInt("userid"));
    
    if (!IsValidClient(client_died) || !IsValidClient(attacker))
    {
