@@ -36,7 +36,7 @@ public Plugin myinfo =
 public void OnPluginStart()
 {
    HookEvent("player_death", Event_PlayerDeath, EventHookMode_Post);
-   HookEvent("round_end", Event_MatchOver, EventHookMode_PostNoCopy);
+   HookEvent("cs_win_panel_match", Event_MatchOver, EventHookMode_PostNoCopy);
    
    for (int i = 1; i <= MaxClients; i++)
    {
